@@ -155,11 +155,12 @@ button, .bottomcontainer {
 }
 
 button {
-   display: flex;
+    display: flex;
     flex: 0 0 auto;
     width: fit-content;
     height: fit-content;
     padding: 14px 28px;
+    font-size: 18px;
     color: #F9FAF8;
     border: 1px solid white;
     border-radius: 14px;
