@@ -2,6 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 img {
@@ -10,9 +12,10 @@ img {
 
 ul {
     display: flex;
+    align-items: center;
     gap: 30px;
     list-style: none;
-    padding: 0px;
+    padding: 0 16px 0 0;
     margin: 0px;
 }
 
@@ -38,6 +41,7 @@ header h1 {
     font-size: 24px;
     font-weight: bold;
     color: #F9FAF8;
+    padding: 0 0 0 16px;
 }
   
 .topcontainer h2 {
@@ -71,4 +75,6 @@ button, .calltoaction {
     background-color: #3882F6;
 }
 
-
+footer {
+    color: #F9FAF8;
+}
