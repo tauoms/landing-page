@@ -4,10 +4,16 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 img {
     max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
 }
 
 ul {
@@ -15,7 +21,7 @@ ul {
     align-items: center;
     gap: 30px;
     list-style: none;
-    padding: 0 16px 0 0;
+    padding: 0px;
     margin: 0px;
 }
 
@@ -23,7 +29,7 @@ a:link, a:visited {
     text-decoration: none;
   }
   
-  a:hover {
+a:hover {
     text-decoration: none;
     color: white;
   }
@@ -34,14 +40,34 @@ header, footer, .topcontainer {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0 16px 0px 16px;
+    margin: 0px;
+
 }
 
 header h1 {
     font-size: 24px;
     font-weight: bold;
     color: #F9FAF8;
-    padding: 0 0 0 16px;
+}
+
+.topcontainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 16px 24px 16px;
+}
+
+.toptext {
+    display: flex;
+    flex-flow: column;
+    max-width: 400px;
+}
+
+.topimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
 .topcontainer h2 {
@@ -61,6 +87,28 @@ p.top, header a {
     font-weight: 900;
 }
 
+.midcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    text-align: center;
+}
+
 .quotecontainer {
     background-color: #E5E7EB;
 }
@@ -75,6 +123,18 @@ button, .calltoaction {
     background-color: #3882F6;
 }
 
+button {
+    display: flex;
+    flex: 0 1 auto;
+    width: fit-content;
+    padding: 6px 14px;
+    color: #F9FAF8;
+}
+
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
     color: #F9FAF8;
 }
